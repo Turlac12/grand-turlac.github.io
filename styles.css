@@ -1,0 +1,163 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    transform: translateY(-25px); /* Сдвигаем на 5px вверх */
+}
+
+
+.nav-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('img/hero.gif') no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Заголовок */
+.hero h1 {
+    font-size: 3rem; /* Размер шрифта для заголовка */
+    font-family: 'Playfair Display', serif; /* Элегантный шрифт */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333;
+    text-transform: uppercase; /* Заглавные буквы для улучшенного вида */
+}
+
+/* Подзаголовок */
+.hero p {
+    font-size: 1.5rem; /* Размер шрифта для подзаголовка */
+    font-family: 'Roboto', sans-serif; /* Шрифт для текста */
+    font-weight: normal;
+    text-align: center;
+    color: #262c01;
+    line-height: 1.8;
+}
+
+.hero .btn {
+    background: #ffd700;
+    color: #333;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 30px; /* Увеличиваем отступ сверху для опускания кнопки */
+    transition: background-color 0.3s; /* Плавное изменение фона */
+}
+.hero .btn:hover {
+    background-color: #f0e171; /* Нежно-желтый цвет фона */
+}
+
+
+
+.products, .about, .contact {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.logo img {
+    width: 5cm; /* Увеличиваем ширину логотипа */
+    height: auto; /* Сохраняем пропорции */
+    margin-top: 20px; /* Добавляем отступ сверху */
+    display: block; /* Убираем лишние отступы */
+    transition: width 0.3s; /* Плавное изменение размера */
+}
+
+/* Базовые стили для шапки */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    z-index: 1000;
+    padding: 20px 0; /* Высота шапки */
+    transition: padding 0.3s, background-color 0.3s;
+}
+
+.header.scrolled {
+    padding: 10px 0; /* Уменьшение высоты шапки */
+    background-color: rgba(0, 0, 0, 0.8); /* Полупрозрачный фон */
+}
+
+/* Логотип */
+.logo img {
+    width: 150px; /* Обычный размер логотипа */
+    transition: width 0.3s;
+}
+
+.header.scrolled .logo img {
+    width: 100px; /* Уменьшенный размер логотипа */
+}
+
+/* Навигация */
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #ffd700;
+}
